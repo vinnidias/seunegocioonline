@@ -156,5 +156,40 @@
 }
 
 .technology .contentBox {
-    max-width: 800px;
+    max-width: 600px;
+    margin-right: 20px;
+
+}
+
+.technology .imageBox {
+    max-width: 200px;
+}
+
+.technology .imageBox img {
+    max-width: 100%;
+}
+
+.client {
+    background-color: #162c3b;
+    padding: 100px;
+    text-align: center;
+}
+
+.client .imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.client .imageBox img {
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.client .imageBox img:hover {
+    opacity: 1;
 }

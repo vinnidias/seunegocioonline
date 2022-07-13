@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -83,11 +83,11 @@
 .about .contentBox {
     background: #162c3b;
     padding: 100px;
-    width: 50%; 
+    width: 50%;
 }
 
 .heading {
-    color:#fff;
+    color: #fff;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -107,4 +107,54 @@
     background-size: cover;
     background-position: center;
 
+}
+
+.services {
+    background-color: #12222d;
+    padding: 100px;
+    text-align: center;
+}
+
+.services .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.services .container .serviceBox {
+    position: relative;
+    background-color: #fff;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .serviceBox img {
+    max-width: 100px;
+}
+
+.services .container .serviceBox h2 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.technology {
+    background-color: #3f8ffc;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology .contentBox {
+    max-width: 800px;
 }

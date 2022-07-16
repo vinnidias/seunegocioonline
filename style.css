@@ -193,3 +193,98 @@
 .client .imageBox img:hover {
     opacity: 1;
 }
+
+.testimonials {
+    position: relative;
+    padding: 100px;
+    background-color: #12222d;
+    text-align: center;
+}
+
+.testimonials .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonials .container .contentBox {
+    background-color: #fff;
+    padding: 60px 50px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.testimonials .container .contentBox p {
+    font-style: italic;
+}
+
+
+.testimonials .container .contentBox h3 {
+    width: 100%;
+    text-align: end;
+    font-weight: 500;
+    color: #3f8ffc;
+}
+
+.contact {
+    padding: 100px;
+    background: #162c3b;
+    text-align: center;
+}
+
+.imgBox2 {
+    background: url(assets/bg2.jpg) !important; 
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.redBg {
+    background: url(assets/red.jpg) !important; 
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+form .inputBox {
+    margin: 2rem;
+}
+
+form .inputBox input {
+    width: 100%;
+    background: transparent;
+    box-sizing: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+form .inputBox input::placeholder {
+    color: #fff;
+}
+
+form .inputBox textarea {
+    width: 100%;
+    background: transparent;
+    box-sizing: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+form .inputBox textarea::placeholder {
+    color: #fff;
+}

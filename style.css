@@ -36,12 +36,12 @@
 
 .banner .content h2 {
     color: #fff;
-    font-size: 3.8rem;
+    font-size: clamp(2rem, 1.2733rem + 3.1008vw, 3.75rem);
 }
 
 .banner .content p {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 0.9585rem + 0.1772vw, 1.1rem);
 }
 
 .banner header {
@@ -49,7 +49,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -238,14 +238,14 @@
 }
 
 .imgBox2 {
-    background: url(assets/bg2.jpg) !important; 
+    background: url(assets/bg2.jpg) !important;
     background-size: cover;
     background-position: center;
     width: 50%;
 }
 
 .redBg {
-    background: url(assets/red.jpg) !important; 
+    background: url(assets/red.jpg) !important;
     background-size: cover;
     background-position: center;
     width: 50%;
@@ -287,4 +287,53 @@ form .inputBox textarea {
 
 form .inputBox textarea::placeholder {
     color: #fff;
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    border: none;
+}
+
+footer {
+    display: flex;
+    background: #162c3b;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border: 1px solid white;
+}
+
+footer ul {
+    display: flex;
+    
+    align-items: center;
+   
+    color: #fff;
+}
+
+footer ul li {
+    list-style: none;
+    
+}
+
+footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer i {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media(max-width: 991px) {
+    .banner header {
+        
+    }
 }

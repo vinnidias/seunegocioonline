@@ -2,13 +2,14 @@ import * as React from "react"
 import * as S from "./styles";
 
 type IProps = {
-  selected: string
+  selected: string;
+  isOpen: boolean
 }
 
-export const SideMenu: React.FC<IProps> = ({selected}) => {
+export const SideMenu: React.FC<IProps> = ({selected, isOpen}) => {
 
   return (
-    <S.Container>
+    <S.Container isOpen={isOpen}>
       <S.List >
         <li>
           <S.Ancor focus={selected} name={"Brand"} to="/">

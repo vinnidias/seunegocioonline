@@ -11,14 +11,20 @@ type IFocus = {
   name: string
 }
 
-export const Container = styled.div`
+type IISOpen = {
+  isOpen: boolean;
+}
+
+export const Container = styled.aside<IISOpen>`
   position: fixed;
-  width: 300px;
+  width: ${({ isOpen }) => isOpen ? `20%` : `6%`};
   height: 100%;
   background-color: ${Theme.colors.secondaryBg};
   border-left: 10px solid ${Theme.colors.secondaryBg};
   transition: .5s;
   overflow-x: hidden;
+
+
   
 `;
 
@@ -107,13 +113,13 @@ export const Item = styled.li<IFocus>`
   
 `
 
-export const Ancor = styled(Link)<IFocus>`
+export const Ancor = styled(Link) <IFocus>`
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   text-decoration: none;
-  color: ${({focus, name})=> focus === name ? Theme.colors.secondaryBg : "#fff"};
+  color: ${({ focus, name }) => focus === name ? Theme.colors.secondaryBg : "#fff"};
   font-family: 'Koulen', cursive;
   .icon {
       position: relative;

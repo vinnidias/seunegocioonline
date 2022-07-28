@@ -1,14 +1,20 @@
 import * as React from "react";
-import { SideMenu } from "../../components/SideMenu";
+
 import * as S from "./styles";
+import { SideMenu } from "../../components/SideMenu";
+import { Header } from "../../components/Header";
+import { MenuContexts } from "../../contexts/MenuContexts";
+
 
 export const Home: React.FC = () => {
+  const { isOpen }:any = React.useContext(MenuContexts)
   return (
     <S.Container>
       <SideMenu
+        isOpen={isOpen}
         selected="Home"
       />
-      <h1>Home</h1>
+      <Header />
     </S.Container>
   );
 };

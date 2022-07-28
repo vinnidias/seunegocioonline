@@ -6,4 +6,8 @@ export const Container = styled.div`
   display: flex;
   background-color: ${Theme.colors.mainBg};
   min-height: 100vh;
+  
+  h1 {
+    margin-left: calc(20% + 15px);
+  }
 `;

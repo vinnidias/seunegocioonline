@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
         isOpen={isOpen}
         selected="Home"
       />
-      <Header />
+      <Header title="Home"/>
     </S.Container>
   );
 };

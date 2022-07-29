@@ -17,7 +17,7 @@ type IISOpen = {
 
 export const Container = styled.aside<IISOpen>`
   position: fixed;
-  width: ${({ isOpen }) => isOpen ? `20%` : `6%`};
+  width: ${({ isOpen }) => isOpen ? `20%` : `5%`};
   height: 100%;
   background-color: ${Theme.colors.secondaryBg};
   border-left: 10px solid ${Theme.colors.secondaryBg};

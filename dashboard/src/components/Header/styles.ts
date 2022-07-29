@@ -6,12 +6,23 @@ type IISOpen = {
 
 export const Header = styled.header<IISOpen>`
   display: flex;
-  margin-left: ${({isOpen}) => isOpen ? `20%` : `6%`};
+  margin-left: ${({isOpen}) => isOpen ? `20%` : `5%`};
   transition: .5s;
   height: 8vh;
   width: 100vw;
-  border: 1px solid red;
   align-items: center;
   padding: 0 10px;
   justify-content: space-between;
+
+  button{
+    background: none;
+    font-size: 1.3rem;
+    transition: .3s;
+
+    :hover {
+      cursor: pointer;
+      opacity: .6;
+      font-size: 1.6rem;
+    }
+  }
 `;

@@ -3,12 +3,16 @@ import * as S from "./styles";
 import { BiMenuAltRight } from "react-icons/bi"
 import { MenuContexts } from "../../contexts/MenuContexts";
 
-export const Header: React.FC = () => {
+type IProps = {
+  title: string;
+}
+
+export const Header: React.FC<IProps>= ({title}) => {
   const { isOpen, setIsOpen }: any = React.useContext(MenuContexts)
   console.log(isOpen)
   return (
     <S.Header isOpen={isOpen}>
-      Header aplication
+      <h2>{title}</h2>
       <button onClick={()=> setIsOpen(!isOpen)}>
         <BiMenuAltRight />
       </button>
